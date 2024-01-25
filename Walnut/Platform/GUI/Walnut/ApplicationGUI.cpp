@@ -591,7 +591,7 @@ namespace Walnut {
 			uint32_t w, h;
 			void* data = Image::Decode(g_WalnutIcon, sizeof(g_WalnutIcon), w, h);
 			m_AppHeaderIcon = std::make_shared<Walnut::Image>(w, h, ImageFormat::RGBA, data);
-			GLFWimage images[1];
+			GLFWimage images[1]{};
 			images[0].height = h;
 			images[0].width = w;
 			images[0].pixels = (unsigned char*)data;
