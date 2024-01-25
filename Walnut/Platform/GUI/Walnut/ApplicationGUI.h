@@ -26,8 +26,6 @@ namespace Walnut {
 		uint32_t Width = 1600;
 		uint32_t Height = 900;
 
-		std::filesystem::path IconPath;
-
 		bool WindowResizeable = true;
 
 		// Uses custom Walnut titlebar instead

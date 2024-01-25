@@ -472,17 +472,6 @@ namespace Walnut {
 			std::cerr << "GLFW: Vulkan not supported!\n";
 			return;
 		}
-		
-		// Set icon
-		GLFWimage icon;
-		int channels;
-		if (!m_Specification.IconPath.empty())
-		{
-			std::string iconPathStr = m_Specification.IconPath.string();
-			icon.pixels = stbi_load(iconPathStr.c_str(), &icon.width, &icon.height, &channels, 4);
-			glfwSetWindowIcon(m_WindowHandle, 1, &icon);
-			stbi_image_free(icon.pixels);
-		}
 
 		glfwSetWindowUserPointer(m_WindowHandle, this);
 		glfwSetTitlebarHitTestCallback(m_WindowHandle, [](GLFWwindow* window, int x, int y, int* hit)
@@ -602,6 +591,11 @@ namespace Walnut {
 			uint32_t w, h;
 			void* data = Image::Decode(g_WalnutIcon, sizeof(g_WalnutIcon), w, h);
 			m_AppHeaderIcon = std::make_shared<Walnut::Image>(w, h, ImageFormat::RGBA, data);
+			GLFWimage images[1];
+			images[0].height = h;
+			images[0].width = w;
+			images[0].pixels = (unsigned char*)data;
+			glfwSetWindowIcon(m_WindowHandle, 1, images);
 			free(data);
 		}
 		{
