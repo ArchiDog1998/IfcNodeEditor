@@ -3,14 +3,40 @@
 
 #include "Walnut/Image.h"
 #include "Walnut/UI/UI.h"
-
+#include "imgui_node_editor.h"
+namespace ed = ax::NodeEditor;
 class ExampleLayer : public Walnut::Layer
 {
 public:
+	virtual void OnAttach() override
+	{
+		ed::Config config;
+		//config.SettingsFile = "Simple.json";
+		m_Context = ed::CreateEditor(&config);
+	}
+
 	virtual void OnUIRender() override
 	{
 		ImGui::Begin("Hello");
 		ImGui::Button("Button");
+
+		ed::SetCurrentEditor(m_Context);
+		ed::Begin("My Editor", ImVec2(0.0, 0.0f));
+		int uniqueId = 1;
+		// Start drawing nodes.
+		ed::BeginNode(uniqueId++);
+		ImGui::Text("Node A");
+		ed::BeginPin(uniqueId++, ed::PinKind::Input);
+		ImGui::Text("-> In");
+		ed::EndPin();
+		ImGui::SameLine();
+		ed::BeginPin(uniqueId++, ed::PinKind::Output);
+		ImGui::Text("Out ->");
+		ed::EndPin();
+		ed::EndNode();
+		ed::End();
+		ed::SetCurrentEditor(nullptr);
+
 		ImGui::End();
 
 		ImGui::ShowDemoWindow();
@@ -54,6 +80,7 @@ public:
 	}
 private:
 	bool m_AboutModalOpen = false;
+	ed::EditorContext* m_Context = nullptr;
 };
 
 Walnut::Application* Walnut::CreateApplication(int argc, char** argv)
