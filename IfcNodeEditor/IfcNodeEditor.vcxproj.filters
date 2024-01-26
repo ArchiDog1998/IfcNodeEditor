@@ -17,12 +17,19 @@
     <ClCompile Include="NodeEditorLayer.cpp">
       <Filter>NodeCanvas</Filter>
     </ClCompile>
-    <ClCompile Include="BasePin.cpp">
-      <Filter>Nodes</Filter>
-    </ClCompile>
     <ClCompile Include="BaseNode.cpp">
       <Filter>Nodes</Filter>
     </ClCompile>
+    <ClCompile Include="NodeTable.cpp">
+      <Filter>Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="BasePin.cpp">
+      <Filter>DocObjs</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseLink.cpp">
+      <Filter>DocObjs</Filter>
+    </ClCompile>
+    <ClCompile Include="Test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="ImguiNodeEditor">
@@ -34,16 +41,28 @@
     <Filter Include="Nodes">
       <UniqueIdentifier>{8681ad7a-12c0-4c77-a6b9-dada33c36e2f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Tables">
+      <UniqueIdentifier>{ee9a4798-7571-447e-bbf5-79e199889fcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DocObjs">
+      <UniqueIdentifier>{3894b4db-2169-4f0d-b4f6-be2d27cb8658}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="NodeEditorLayer.h">
       <Filter>NodeCanvas</Filter>
     </ClInclude>
-    <ClInclude Include="BasePin.h">
-      <Filter>Nodes</Filter>
-    </ClInclude>
     <ClInclude Include="BaseNode.h">
       <Filter>Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeTable.h">
+      <Filter>Tables</Filter>
+    </ClInclude>
+    <ClInclude Include="BasePin.h">
+      <Filter>DocObjs</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseLink.h">
+      <Filter>DocObjs</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

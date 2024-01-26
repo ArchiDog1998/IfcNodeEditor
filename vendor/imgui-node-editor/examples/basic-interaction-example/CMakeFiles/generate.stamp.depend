@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+E:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/examples/CMakeFiles/cmake.verify_globs
+E:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/examples/application/support/Resource.rc.in
+E:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/examples/basic-interaction-example/CMakeLists.txt
+E:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/misc/cmake-modules/Findimgui.cmake
+E:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/misc/cmake-modules/Findimgui_node_editor.cmake

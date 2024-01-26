@@ -7,5 +7,7 @@ bin-int/
 *.vcxproj.user
 *.ini
 
+vendor/imgui-node-editor/examples/
+
 # Exclude
 !vendor/bin

@@ -145,6 +145,7 @@
     <ClCompile Include="..\vendor\imgui-node-editor\imgui_canvas.cpp" />
     <ClCompile Include="..\vendor\imgui-node-editor\imgui_node_editor.cpp" />
     <ClCompile Include="..\vendor\imgui-node-editor\imgui_node_editor_api.cpp" />
+    <ClCompile Include="BaseLink.cpp" />
     <ClCompile Include="BaseNode.cpp" />
     <ClCompile Include="NodeEditorLayer.cpp" />
     <ClCompile Include="IfcNodeEditor.cpp">
@@ -153,6 +154,8 @@
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
     <ClCompile Include="BasePin.cpp" />
+    <ClCompile Include="NodeTable.cpp" />
+    <ClCompile Include="Test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Walnut\Walnut.vcxproj">
@@ -160,9 +163,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BaseLink.h" />
     <ClInclude Include="BaseNode.h" />
     <ClInclude Include="NodeEditorLayer.h" />
     <ClInclude Include="BasePin.h" />
+    <ClInclude Include="NodeTable.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

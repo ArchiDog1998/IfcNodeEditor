@@ -18,6 +18,7 @@ void NodeEditorLayer::OnUIRender()
 	ImGui::SetNextWindowSize(ImVec2(150, 150), ImGuiCond_FirstUseEver);
 	ImGui::Begin("Node Editor");
 	ed::SetCurrentEditor(m_Context);
+
 	ed::Begin("My Editor", ImVec2(0.0, 0.0f));
 	int uniqueId = 1;
 	// Start drawing nodes.

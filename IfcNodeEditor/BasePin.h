@@ -1,6 +1,7 @@
 #pragma once
 #include "imgui_node_editor.h"
 #include <string>
+#include <vector>
 
 namespace ed = ax::NodeEditor;
 
@@ -10,16 +11,27 @@ public:
 	std::string Name;
 	ed::PinId ID;
 
-	void* PersistentData;
-	template <typename T>
-	bool SetPersistentData(T data)
-	{
+    PinType Type;
+    ed::PinKind Kind;
 
-	}
-
-	void OnUIRender(ed::PinKind kind);
+	void OnUIRender();
 
 protected:
 	virtual void Draw();
+
+private:
+	void* PersistentData;
+};
+
+enum class PinType
+{
+    Flow,
+    Bool,
+    Int,
+    Float,
+    String,
+    Object,
+    Function,
+    Delegate,
 };
 

@@ -1,0 +1,7 @@
+﻿  Building Custom Rule E:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/examples/canvas-example/CMakeLists.txt
+  crude_json.cpp
+  imgui_canvas.cpp
+  imgui_node_editor_api.cpp
+  imgui_node_editor.cpp
+  Generating Code...
+  imgui_node_editor.vcxproj -> E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\canvas-example\Debug\imgui_node_editor.lib

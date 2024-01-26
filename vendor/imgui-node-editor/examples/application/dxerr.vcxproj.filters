@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\DXSDK\src\dxerr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{804E474C-03E3-3B70-8833-7E41AA2EB20B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,8 +1,8 @@
 #include "BasePin.h"
 
-void BasePin::OnUIRender(ed::PinKind kind)
+void BasePin::OnUIRender()
 {
-	ed::BeginPin(ID, kind);
+	ed::BeginPin(ID, Kind);
 	Draw();
 	ed::EndPin();
 }

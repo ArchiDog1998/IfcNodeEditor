@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{11EBB930-FD25-39BA-9941-E749E54C6620}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>application</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">application.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">application</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">application.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">application</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">application.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">application</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">application.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">application</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\include;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\imgui;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\stb_image;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\ScopeGuard;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "E:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/external/DXSDK/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;IMGUI_DISABLE_OBSOLETE_FUNCTIONS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;IMGUI_DISABLE_OBSOLETE_FUNCTIONS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\include;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\imgui;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\stb_image;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\ScopeGuard;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\DXSDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\include;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\imgui;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\stb_image;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\ScopeGuard;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\DXSDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\include;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\imgui;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\stb_image;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\ScopeGuard;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "E:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/external/DXSDK/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;IMGUI_DISABLE_OBSOLETE_FUNCTIONS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;IMGUI_DISABLE_OBSOLETE_FUNCTIONS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\include;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\imgui;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\stb_image;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\ScopeGuard;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\DXSDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\include;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\imgui;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\stb_image;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\ScopeGuard;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\DXSDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\include;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\imgui;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\stb_image;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\ScopeGuard;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "E:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/external/DXSDK/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;IMGUI_DISABLE_OBSOLETE_FUNCTIONS;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;IMGUI_DISABLE_OBSOLETE_FUNCTIONS;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\include;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\imgui;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\stb_image;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\ScopeGuard;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\DXSDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\include;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\imgui;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\stb_image;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\ScopeGuard;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\DXSDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\include;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\imgui;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\stb_image;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\ScopeGuard;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "E:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/external/DXSDK/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;IMGUI_DISABLE_OBSOLETE_FUNCTIONS;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;IMGUI_DISABLE_OBSOLETE_FUNCTIONS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\include;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\imgui;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\stb_image;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\ScopeGuard;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\DXSDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\include;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\imgui;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\stb_image;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\ScopeGuard;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\DXSDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/examples/application/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/examples -BE:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/examples --check-stamp-file E:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/examples/application/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\CMakeFiles\cmake.verify_globs;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source\config.h.in;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\misc\cmake-modules\FindScopeGuard.cmake;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\misc\cmake-modules\Findimgui.cmake;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\misc\cmake-modules\Findstb_image.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/examples/application/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/examples -BE:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/examples --check-stamp-file E:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/examples/application/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\CMakeFiles\cmake.verify_globs;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source\config.h.in;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\misc\cmake-modules\FindScopeGuard.cmake;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\misc\cmake-modules\Findimgui.cmake;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\misc\cmake-modules\Findstb_image.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/examples/application/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/examples -BE:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/examples --check-stamp-file E:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/examples/application/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\CMakeFiles\cmake.verify_globs;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source\config.h.in;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\misc\cmake-modules\FindScopeGuard.cmake;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\misc\cmake-modules\Findimgui.cmake;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\misc\cmake-modules\Findstb_image.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/examples/application/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/examples -BE:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/examples --check-stamp-file E:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/examples/application/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\CMakeFiles\cmake.verify_globs;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source\config.h.in;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\misc\cmake-modules\FindScopeGuard.cmake;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\misc\cmake-modules\Findimgui.cmake;E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\misc\cmake-modules\Findstb_image.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\include\application.h" />
+    <ClCompile Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source\application.cpp" />
+    <ClCompile Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source\entry_point.cpp" />
+    <ClInclude Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source\imgui_extra_keys.h" />
+    <ClInclude Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source\config.h.in" />
+    <ClInclude Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source\setup.h" />
+    <ClInclude Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source\platform.h" />
+    <ClCompile Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source\platform_win32.cpp" />
+    <ClCompile Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source\platform_glfw.cpp" />
+    <ClInclude Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source\renderer.h" />
+    <ClCompile Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source\renderer_dx11.cpp" />
+    <ClCompile Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source\renderer_ogl3.cpp" />
+    <ClCompile Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source\imgui_impl_dx11.cpp" />
+    <ClInclude Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source\imgui_impl_dx11.h" />
+    <ClCompile Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source\imgui_impl_win32.cpp" />
+    <ClInclude Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\source\imgui_impl_win32.h" />
+    <ClInclude Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\stb_image\stb_image.h" />
+    <ClInclude Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\external\ScopeGuard\ScopeGuard.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\ZERO_CHECK.vcxproj">
+      <Project>{A1BFF3A5-AC61-3FA6-BBB1-1B302402F16D}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\application\dxerr.vcxproj">
+      <Project>{4E420EA5-0F97-3243-AAD9-B8278E879C44}</Project>
+      <Name>dxerr</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\external\imgui\imgui.vcxproj">
+      <Project>{89F20AF4-5E57-356F-BA90-2F7A77B3F969}</Project>
+      <Name>imgui</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

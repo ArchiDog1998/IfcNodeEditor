@@ -5,6 +5,7 @@ void BaseNode::OnUIRender()
 	ed::BeginNode(ID);
 
 	ImGui::Text(Name.c_str());
+
 	// Inputs.
 	{ 
 		ImGui::BeginGroup();
