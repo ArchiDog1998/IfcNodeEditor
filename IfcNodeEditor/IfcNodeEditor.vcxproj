@@ -84,7 +84,7 @@
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <AdditionalOptions>/EHsc /Zc:preprocessor /Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
     <Link>
@@ -145,16 +145,24 @@
     <ClCompile Include="..\vendor\imgui-node-editor\imgui_canvas.cpp" />
     <ClCompile Include="..\vendor\imgui-node-editor\imgui_node_editor.cpp" />
     <ClCompile Include="..\vendor\imgui-node-editor\imgui_node_editor_api.cpp" />
-    <ClCompile Include="src\IfcNodeEditor.cpp">
+    <ClCompile Include="BaseNode.cpp" />
+    <ClCompile Include="NodeEditorLayer.cpp" />
+    <ClCompile Include="IfcNodeEditor.cpp">
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
+    <ClCompile Include="BasePin.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Walnut\Walnut.vcxproj">
       <Project>{C038E8D9-ACDA-12B0-9595-260481D69900}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseNode.h" />
+    <ClInclude Include="NodeEditorLayer.h" />
+    <ClInclude Include="BasePin.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

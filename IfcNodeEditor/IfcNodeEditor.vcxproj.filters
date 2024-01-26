@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="IfcNodeEditor.cpp" />
+    <ClCompile Include="..\vendor\imgui-node-editor\crude_json.cpp">
+      <Filter>ImguiNodeEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\imgui-node-editor\imgui_canvas.cpp">
+      <Filter>ImguiNodeEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\imgui-node-editor\imgui_node_editor.cpp">
+      <Filter>ImguiNodeEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\imgui-node-editor\imgui_node_editor_api.cpp">
+      <Filter>ImguiNodeEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeEditorLayer.cpp">
+      <Filter>NodeCanvas</Filter>
+    </ClCompile>
+    <ClCompile Include="BasePin.cpp">
+      <Filter>Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseNode.cpp">
+      <Filter>Nodes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ImguiNodeEditor">
+      <UniqueIdentifier>{86e5d436-59e8-4834-a3f1-e22a04073a57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NodeCanvas">
+      <UniqueIdentifier>{82eebcc1-75bb-4eb6-ac25-a64f23254f80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nodes">
+      <UniqueIdentifier>{8681ad7a-12c0-4c77-a6b9-dada33c36e2f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NodeEditorLayer.h">
+      <Filter>NodeCanvas</Filter>
+    </ClInclude>
+    <ClInclude Include="BasePin.h">
+      <Filter>Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseNode.h">
+      <Filter>Nodes</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
