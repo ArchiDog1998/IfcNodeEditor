@@ -155,7 +155,6 @@
     </ClCompile>
     <ClCompile Include="BasePin.cpp" />
     <ClCompile Include="NodeTable.cpp" />
-    <ClCompile Include="Test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Walnut\Walnut.vcxproj">

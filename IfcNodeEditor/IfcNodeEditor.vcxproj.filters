@@ -29,7 +29,6 @@
     <ClCompile Include="BaseLink.cpp">
       <Filter>DocObjs</Filter>
     </ClCompile>
-    <ClCompile Include="Test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="ImguiNodeEditor">
