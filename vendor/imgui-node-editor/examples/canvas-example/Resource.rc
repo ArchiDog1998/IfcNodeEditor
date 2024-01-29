@@ -1,3 +1,0 @@
-#define IDI_APPLICATION     32512
-
-IDI_APPLICATION    ICON   "E:\\OneDrive\\Work\\Codes\\IfcNodeEditor\\vendor\\imgui-node-editor\\examples\\Application\\Support\\Icon.ico"

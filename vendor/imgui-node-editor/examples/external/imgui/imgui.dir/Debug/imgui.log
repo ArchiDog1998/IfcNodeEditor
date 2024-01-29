@@ -1,8 +1,0 @@
-﻿  Building Custom Rule E:/OneDrive/Work/Codes/IfcNodeEditor/vendor/imgui-node-editor/external/imgui/CMakeLists.txt
-  imgui.cpp
-  imgui_demo.cpp
-  imgui_draw.cpp
-  imgui_widgets.cpp
-  imgui_tables.cpp
-  Generating Code...
-  imgui.vcxproj -> E:\OneDrive\Work\Codes\IfcNodeEditor\vendor\imgui-node-editor\examples\external\imgui\Debug\imgui.lib
