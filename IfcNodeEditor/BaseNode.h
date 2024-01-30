@@ -1,7 +1,14 @@
 #pragma once
 #include "BasePin.h"
-#include <vector>
-#include <string>
+
+enum class NodeType
+{
+    Blueprint,
+    Simple,
+    Tree,
+    Comment,
+    Houdini,
+};
 
 class BaseNode
 {
@@ -13,13 +20,4 @@ public:
     NodeType Type;
 
 	virtual void OnUIRender();
-};
-
-enum class NodeType
-{
-    Blueprint,
-    Simple,
-    Tree,
-    Comment,
-    Houdini
 };

@@ -11,7 +11,7 @@ void BaseNode::OnUIRender()
 		ImGui::BeginGroup();
 		for (auto& input : Inputs)
 		{
-			input.OnUIRender(ed::PinKind::Input);
+			input.OnUIRender();
 		}
 		ImGui::EndGroup();
 	}
@@ -21,7 +21,7 @@ void BaseNode::OnUIRender()
 		ImGui::BeginGroup();
 		for (auto& output : Outputs)
 		{
-			output.OnUIRender(ed::PinKind::Output);
+			output.OnUIRender();
 		}
 		ImGui::EndGroup();
 	}

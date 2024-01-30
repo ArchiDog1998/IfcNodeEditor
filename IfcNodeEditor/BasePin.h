@@ -5,6 +5,18 @@
 
 namespace ed = ax::NodeEditor;
 
+enum class PinType
+{
+    Flow,
+    Bool,
+    Int,
+    Float,
+    String,
+    Object,
+    Function,
+    Delegate,
+};
+
 class BasePin
 {
 public:
@@ -22,16 +34,3 @@ protected:
 private:
 	void* PersistentData;
 };
-
-enum class PinType
-{
-    Flow,
-    Bool,
-    Int,
-    Float,
-    String,
-    Object,
-    Function,
-    Delegate,
-};
-
