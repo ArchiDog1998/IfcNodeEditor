@@ -11,6 +11,6 @@ public:
 	void OnDetach() override;
 	void OnUIRender() override;
 private:
-	ed::EditorContext* m_Context = nullptr;
+	ed::EditorContext* _context = nullptr;
 };
 

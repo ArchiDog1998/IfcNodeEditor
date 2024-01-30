@@ -5,19 +5,19 @@ void NodeEditorLayer::OnAttach()
 {
 	ed::Config config;
 	config.SettingsFile = "Simple.json";
-	m_Context = ed::CreateEditor(&config);
+	_context = ed::CreateEditor(&config);
 }
 
 void NodeEditorLayer::OnDetach() 
 {
-	ed::DestroyEditor(m_Context);
+	ed::DestroyEditor(_context);
 }
 
 void NodeEditorLayer::OnUIRender()
 {
 	ImGui::SetNextWindowDockID(ImGui::GetWindowDockID(), ImGuiCond_FirstUseEver);
 	ImGui::Begin("Node Editor");
-	ed::SetCurrentEditor(m_Context);
+	ed::SetCurrentEditor(_context);
 
 	ed::Begin("My Editor", ImVec2(0.0, 0.0f));
 	int uniqueId = 1;
