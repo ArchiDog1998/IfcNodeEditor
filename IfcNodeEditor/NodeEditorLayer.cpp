@@ -15,7 +15,7 @@ void NodeEditorLayer::OnDetach()
 
 void NodeEditorLayer::OnUIRender()
 {
-	ImGui::SetNextWindowSize(ImVec2(150, 150), ImGuiCond_FirstUseEver);
+	ImGui::SetNextWindowDockID(ImGui::GetWindowDockID(), ImGuiCond_FirstUseEver);
 	ImGui::Begin("Node Editor");
 	ed::SetCurrentEditor(m_Context);
 
