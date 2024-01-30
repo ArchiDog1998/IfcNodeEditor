@@ -7,9 +7,9 @@ namespace ed = ax::NodeEditor;
 class NodeEditorLayer : public Walnut::Layer
 {
 public:
-	virtual void OnAttach() override;
-	virtual void OnDetach() override;
-	virtual void OnUIRender() override;
+	void OnAttach() override;
+	void OnDetach() override;
+	void OnUIRender() override;
 private:
 	ed::EditorContext* m_Context = nullptr;
 };
