@@ -147,6 +147,7 @@
     <ClCompile Include="..\vendor\imgui-node-editor\imgui_node_editor_api.cpp" />
     <ClCompile Include="BaseLink.cpp" />
     <ClCompile Include="BaseNode.cpp" />
+    <ClCompile Include="Drawing.cpp" />
     <ClCompile Include="NodeEditorLayer.cpp" />
     <ClCompile Include="IfcNodeEditor.cpp">
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
@@ -164,6 +165,7 @@
   <ItemGroup>
     <ClInclude Include="BaseLink.h" />
     <ClInclude Include="BaseNode.h" />
+    <ClInclude Include="Drawing.h" />
     <ClInclude Include="NodeEditorLayer.h" />
     <ClInclude Include="BasePin.h" />
     <ClInclude Include="NodeTable.h" />
